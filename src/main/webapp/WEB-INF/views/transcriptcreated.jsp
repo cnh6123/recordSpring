@@ -8,6 +8,6 @@
 </head>
 <body>
 ${transcript.year}년 ${transcript.semester}학기의 ${transcript.name} 과목 수강신청 완료!<br>
-<a href="${pageContext.request.contextPath}/transcripts">click here to view current offers</a>
+<a href="${pageContext.request.contextPath}/transcripts">click here to view current transcripts</a>
 </body>
 </html>
