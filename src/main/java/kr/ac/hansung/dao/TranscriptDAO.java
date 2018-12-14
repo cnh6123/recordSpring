@@ -95,7 +95,6 @@ public class TranscriptDAO {
 		int score = transcript.getScore();
 		
 		String sqlStatement = "insert into transcript(trans_year,semester,trans_cord,trans_name,trans_type,trans_score) value(?,?,?,?,?,?)";
-
 		return (jdbcTemplate.update(sqlStatement, new Object[] { year, semester, cord, name, type, score }) == 1);
 	}
 }
