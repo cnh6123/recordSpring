@@ -11,14 +11,36 @@
 <title>Insert title here</title>
 <style>
 table {
-	width: 100%;
-	border-top: 1px solid #444444;
-	border-collapse: collapse;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-left: 1px solid #ccc;
+    margin: 20px 10px;
 }
 
-th, td {
-	border-bottom: 1px solid #444444;
-	padding: 10px;
+thead,th {
+    padding: 10px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 2px solid #c00;
+    background: #dcdcd1;
+}
+tbody,th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #ececec;
+}
+td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 </style>
 </head>
@@ -46,12 +68,6 @@ th, td {
 			</c:forEach>
 		</tbody>
 	</table>
-
-	<%-- <c:forEach var="transcript" items="${transcripts}">
-		<p>
-			<c:out value="${transcript}"></c:out>
-		</p>
-	</c:forEach> --%>
 
 </body>
 </html>
